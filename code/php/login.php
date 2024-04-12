@@ -20,22 +20,16 @@ if (isset($_POST['email']) && isset($_POST['password']) && isset($_POST['user'])
     $user = $conn->real_escape_string($_POST['user']);
 
     // Consulta SQL para verificar o usuário
-    $query = "SELECT * FROM cadastro WHERE email='$email' AND user_name='$user'";
+    $query = "SELECT * FROM cadastro WHERE email='$email' AND user_name='$user' AND password='$password'";
     $result = $conn->query($query) or die('Query failed: ' . $conn->error);
 
     // Verificando se a consulta retornou algum resultado
     if ($result->num_rows == 1) {
         $usuario = $result->fetch_assoc();
-        // Verificando se a senha fornecida corresponde à senha armazenada no banco de dados
-        if (password_verify($password, $usuario['password'])) {
-            // Se as credenciais estiverem corretas, inicia a sessão e redireciona para a página de home
-            $_SESSION['cadastro'] = $usuario['user_name'];
-            header("Location: ../html/home.html");
-            exit;
-        } else {
-            // Se a senha estiver incorreta, exibe mensagem de erro
-            echo "Falha ao logar! Email, usuário ou senha incorretos";
-        }
+        // Se as credenciais estiverem corretas, inicia a sessão e redireciona para a página de home
+        $_SESSION['cadastro'] = $usuario['user_name'];
+        header("Location: ../html/home.html");
+        exit;
     } else {
         // Se nenhum usuário correspondente for encontrado, exibe mensagem de erro
         echo "Falha ao logar! Email, usuário ou senha incorretos";
