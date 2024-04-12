@@ -31,8 +31,10 @@ if (isset($_POST['email']) && isset($_POST['password']) && isset($_POST['user'])
         header("Location: ../html/home.html");
         exit;
     } else {
-        // Se nenhum usuário correspondente for encontrado, exibe mensagem de erro
-        echo "Falha ao logar! Email, usuário ou senha incorretos";
+        // Se nenhum usuário correspondente for encontrado, exibe mensagem de erro e redireciona para a página index
+        echo "<script>alert('Falha ao logar! Email, usuário ou senha incorretos.');</script>";
+        echo "<script>window.location.href='../../index.html';</script>";
+        exit;
     }
 }
 
