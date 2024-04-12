@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/logo_rosa.png">
+    <title>Namorada - Login</title>
+    <Link rel="stylesheet" type="text/css" href="code/css/login.css"/>
+    <script type="text/javascript" src="code/js/function-heart.js"></script> 
+    <script type="text/javascript" src="code/js/function-login.js"></script> 
+</head>
+<body>
+    <header>
+        <h1 class="cursor" title="Meu amor, minha namorada, minha vida!">My Love</h1>
+    </header>
+    <form action="code/php/login.php" method="post">
+        <fieldset id="background-collum">
+            <a id="link-form" href="code/html/form-love.html">Cadastrar-se como Namorada</a>
+        </fieldset>
+        <fieldset>
+            <legend class="cursor" title="Login da Namorada">Login - Vida</legend>
+            <br><br><br>
+            <label>
+                <br><br>
+                <div class="nowrap">
+                    <img style="display: inline;" class="heart-resetW heart-white cursor" src="img/heart_white.png" title="Responda!" alt="Indica que não foi respondido a pergunta do formulário."/>
+                    <img style="display: none;" class="heart-reset heart cursor" src="img/heart.png" title="Respondida!" alt="Indica que foi respondido a pergunta do formulário."/>
+                    <p>Nome de usuário:</p>
+                </div>
+                <div class="center"><input id="user" name="user" class="question cursor-pointer" type="text" placeholder="Minha Linda Namorada!" required/></div>
+            </label>
+            <br>
+            <label>
+                <div class="nowrap">
+                    <img style="display: inline;" class="heart-resetW heart-white cursor" src="img/heart_white.png" title="Responda!" alt="Indica que não foi respondido a pergunta do formulário."/>
+                    <img style="display: none;" class="heart-reset heart cursor" src="img/heart.png" title="Respondida!" alt="Indica que foi respondido a pergunta do formulário."/>
+                    <p>Email da Comprometida:</p>
+                </div>
+                <div class="center"><input id="email" name="email" class="question cursor-pointer" type="email" placeholder="amordaminhavida@gmail.com" required/></div>
+            </label>
+            <br>
+            <label>
+                <div class="nowrap">
+                    <img style="display: inline;" class="heart-resetW pheart-white cursor" src="img/heart_white.png" title="Responda!" alt="Indica que não foi respondido a pergunta do formulário."/>
+                    <img style="display: none;" class="heart-reset pheart cursor" src="img/heart.png" title="Respondida!" alt="Indica que foi respondido a pergunta do formulário."/>
+                    <p>Senha:</p>
+                </div>
+                <div class="center">
+                    <div class="box-viewer">
+                        <input class="question-pass cursor-pointer" type="password" id="password" name="password" placeholder="Secret love?" autocomplete="off" minlength="7" maxlength="20" required/>
+                        <img id="viewer" style="display: block;" class="viewer-click viewers cursor-pointer" src="img/viewer.png" title="Visualizar senha?" alt="Visualizador de senha">
+                        <img id="viewer-on" style="display: none;" class="viewer-click viewers cursor-pointer" src="img/viewer_on.png" title="Senha exposta!" alt="Senha visualizada">
+                    </div>
+                    <br><br>
+                </div>
+            </label>
+            <div class="center">
+                <div class="wrap">
+                    <div class="center">
+                        <p id="character-special" class="validate-password" style="display: none;">Caracter especial!</p>
+                        <p id="numberpass" class="validate-password" style="display: none;">Número!</p>
+                    </div>
+                    <div class="center">  
+                        <p id="uppercase" class="validate-password" style="display: none;">Letra maiúscula!</p>
+                        <p id="lowercase" class="validate-password" style="display: none;">Letra minúscula!</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div id="mult-buttom">
+                <input id="buttom-reset" class="buttom cursor-pointer" type="reset" id="reset"/>
+                <input class="buttom cursor-pointer" type="submit" id="submit" name="submit"/>
+            </div>
+        </fieldset>
+    </form>
+    <footer></footer>
+</body>
+</html>
