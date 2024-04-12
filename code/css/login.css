@@ -1,0 +1,194 @@
+body {
+    margin: 0;
+    background-image: url(../../img/background_lateral.jpg);
+}
+
+header {
+    background-image: url(../../img/background_heart.jpg);
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    height: 100px;
+    border-bottom: ridge 10px rgb(245, 86, 113);
+}
+
+h1 {
+    color: rgb(214, 83, 144);
+    font-family: cursive;
+    letter-spacing: 2px;
+    text-decoration: dashed underline 3px rgb(214, 83, 144);
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    font-family: cursive;
+    font-size: medium;
+    font-weight: bolder;
+}
+
+fieldset#background-collum {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    width: 400px;
+    height: 530px;
+    padding-bottom: 10px;
+    background-image: url(../../img/background_mult_heart_white.jpg);
+    border: ridge 5px rgb(245, 86, 113);
+    border-top: none;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+a#link-form {
+    text-decoration: none;
+    background-color: #fff;
+    color: rgb(214, 83, 144);
+    padding: 5px;
+    border: 4px rgb(214, 83, 144) outset;
+    border-radius: 10px;
+}
+
+a#link-form:hover {
+    text-shadow: #000 1px -1px;
+    text-transform: lowercase;
+    border: inset;
+}
+
+fieldset {
+    position: absolute;
+    background-color: rgb(253, 189, 237);
+    border: ridge 5px rgb(245, 86, 113);
+    border-top: none;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+legend {
+    position: absolute;
+    top: 50px;
+    left: 75px;
+    letter-spacing: 2px;
+    font-size: larger;
+    font-weight: bolder;
+    text-shadow: 2px 2px black;
+    text-decoration: underline wavy 2px rgb(245, 86, 113);
+}
+
+label {
+    color: rgb(214, 83, 144);
+    text-shadow: 2px 2px black;
+}
+
+/* Deixa visível os title ao passar o cursor */
+.cursor:hover {
+    cursor: url(../../img/cursor_heart.png), auto;
+}
+
+.cursor-pointer:hover {
+    cursor: pointer;
+}
+
+/* Centraliza as div no meio */
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+/* Organiza os páragrágos em uma linha */
+.nowrap {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+img.heart-white, img.heart, img.pheart-white, img.pheart {
+    padding-left: 10px;
+    transition-duration: 15s;
+}
+
+img.rosa-white {
+    padding-left: 30px;
+    padding-right: 5px;
+    transition-duration: 15s;
+}
+
+img.rosa {
+    padding-left: 30px;
+    padding-right: 5px;
+    transition-duration: 15s;
+}
+
+p {
+    text-indent: 10px;
+    margin: 0;
+}
+
+input {
+    text-align: center;
+    font-family: cursive;
+    font-weight: bold;
+    margin: 5px;
+    border: groove;
+    border-radius: 8px;
+    width: 230px;
+    height: 20px;
+}
+
+input:focus { /* Retira a borda ao clicar na caixa do input */
+    color: black;
+    text-align: justify;
+    box-shadow: 2px 2px 2px 2px;
+    outline-color: rgb(245, 86, 113);
+}
+
+.box-viewer {
+    position: absolute;
+    display: flex;
+    align-items: baseline;
+}
+
+.viewers {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%)
+}
+
+.validate-password {
+    color: #EF314C; 
+}
+
+#mult-buttom {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+input.buttom {
+    text-align: center;
+    height: 30px;
+    width: 120px;
+    border: outset 1px 1px rgb(214, 83, 144);
+    border-radius: 20px;
+    color: rgb(245, 86, 113);
+    font-weight: bolder;
+    text-shadow: 3px 3px #fff;
+    background-image: url(../../img/background_mult_heart_white.jpg);
+}
+
+input.buttom:hover {
+    color: white;
+    text-shadow: none;
+    font-weight: bold;
+    border: inset;
+    background-image: url(../../img/background_mult_heart.jpg);
+}

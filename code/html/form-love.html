@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../img/logo_rosa.png">
+    <title>Namorada - Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="../css/form-love.css"/>
+    <script type="text/javascript" src="../js/function-heart.js"></script>
+    <script type="text/javascript" src="../js/function-rosa.js"></script>
+    <script type="text/javascript" src="../js/function-mask-tel.js"></script>   
+    <script type="text/javascript" src="../js/function-confirm-password.js"></script> 
+    <script type="text/javascript" src="../js/function-viewer-password.js"></script>
+    <script type="text/javascript" src="../js/function-reset-icone.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="cursor" title="Meu amor, minha namorada, minha vida!">My Love</h1>
+    </header>
+    <form method="post" action="../php/cadastro.php">
+        <fieldset>
+            <a id="go-back" href="../../index.html" title="Voltar ao Login" alt="Botão que executa a função de voltar ao login"><img src="../../img/button_go_back.png"/></a>
+            <legend class="cursor" title="Cadastro para minha namorada:">Cadastro - Vida:</legend>
+            <br><br><br>
+            <label>
+                <div class="nowrap">
+                    <img style="display: inline;" class="heart-resetW heart-white cursor" src="../../img/heart_white.png" title="Responda!" alt="Indica que não foi respondido a pergunta do formulário."/>
+                    <img style="display: none;" class="heart-reset heart cursor" src="../../img/heart.png" title="Respondida!" alt="Indica que foi respondido a pergunta do formulário."/>
+                    <p>Nome de usuário:</p>
+                </div>
+                <div class="center"><input id="user" name="user" class="question cursor-pointer" type="text" placeholder="Minha Linda Namorada!" maxlength="20" minlength="3" required/></div>
+            </label>
+            <br>
+            <label>
+                <div class="nowrap">
+                    <img style="display: inline;" class="heart-resetW heart-white cursor" src="../../img/heart_white.png" title="Responda!" alt="Indica que não foi respondido a pergunta do formulário."/>
+                    <img style="display: none;" class="heart-reset heart cursor" src="../../img/heart.png" title="Respondida!" alt="Indica que foi respondido a pergunta do formulário."/>
+                    <p>Qual o nome do meu amor?</p> 
+                </div>
+                <div class="center"><input class="question cursor-pointer" type="text" id="name" name="name" placeholder="Gata Branca ou Docinho de Whey?" maxlength="45" minlength="3" required/></div>
+            </label>
+            <br>
+            <label>
+                <div class="nowrap">
+                    <img style="display: inline;" class="heart-resetW heart-white cursor" src="../../img/heart_white.png" title="Responda!" alt="Indica que não foi respondido a pergunta do formulário."/>
+                    <img style="display: none;" class="heart-reset heart cursor" src="../../img/heart.png" title="Respondida!" alt="Indica que foi respondido a pergunta do formulário."/>
+                    <p>Qual o Email?</p>
+                </div>
+                <div class="center"><input class="question cursor-pointer" type="email" id="email" name="email" placeholder="amordaminhavida@gmail.com" maxlength="45" required/></div>
+            </label>    
+            <br>
+            <label>
+                <div class="nowrap">
+                    <img style="display: inline;" class="heart-resetW heart-white cursor" src="../../img/heart_white.png" title="Responda!" alt="Indica que não foi respondido a pergunta do formulário."/>
+                    <img style="display: none;" class="heart-reset heart cursor" src="../../img/heart.png" title="Respondida!" alt="Indica que foi respondido a pergunta do formulário."/>
+                    <p>Qual o número da Princesinha?</p>
+                </div>
+                <div class="center"><input class="question cursor-pointer" type="tel" id="tel" name="tel" title="piririm piririm, você é para mim..." placeholder="+XX (XX) XXXXX-XXXX" minlength="19" required/></div>
+            </label>         
+            <br>
+            <label>
+                <div class="nowrap">
+                    <img style="display: inline;" class="heart-resetW heart-white cursor" src="../../img/heart_white.png" title="Responda!" alt="Indica que não foi respondido a pergunta do formulário."/>
+                    <img style="display: none;" class="heart-reset heart cursor" src="../../img/heart.png" title="Respondida!" alt="Indica que foi respondido a pergunta do formulário."/>
+                    <p>Em qual ano nasceu?</p>
+                </div>
+                <div class="center"><input class="question cursor-pointer" type="date" id="date" name="date" placeholder="19/09/2007" required/></div>
+            </label>
+            <br>
+            <label>
+                <div class="nowrap">
+                    <img style="display: inline;" class="heart-resetW heart-white cursor" src="../../img/heart_white.png" title="Responda!" alt="Indica que não foi respondido a pergunta do formulário."/>
+                    <img style="display: none;" class="heart-reset heart cursor" src="../../img/heart.png" title="Respondida!" alt="Indica que foi respondido a pergunta do formulário."/>
+                    <p>Qual a idade dessa pessoinha importante?</p>
+                </div>
+                <div class="center"><input class="question cursor-pointer" type="number" id="age" name="age" placeholder="16 anos de amor?" min="1" max="120" required/></div>
+            </label>
+            <br>
+            <label>
+                <div class="nowrap">
+                    <img style="display: inline;" class="heart-resetW heart-white cursor" src="../../img/heart_white.png" title="Responda!" alt="Indica que não foi respondido a pergunta do formulário."/>
+                    <img style="display: none;" class="heart-reset heart cursor" src="../../img/heart.png" title="Respondida!" alt="Indica que foi respondido a pergunta do formulário."/>
+                    <p>Onde mora?</p>
+                </div>
+                <div class="center"><input class="question cursor-pointer" type="text" id="address" name="address" placeholder="Meu coração!" minlength="2" maxlength="200" required/></div>
+            </label>
+            <br>
+            <label>
+                <div class="nowrap">
+                    <img style="display: inline;" class="heart-resetW heart-white cursor" src="../../img/heart_white.png" title="Responda!" alt="Indica que não foi respondido a pergunta do formulário."/>
+                    <img style="display: none;" class="heart-reset heart cursor" src="../../img/heart.png" title="Respondida!" alt="Indica que foi respondido a pergunta do formulário."/>
+                    <p>Cor favorita?</p>
+                </div>
+                <div class="center"><input class="question cursor-pointer" type="color" id="favcolor" name="favcolor"/></div>
+            </label>
+            <br>
+            <label>
+                <div class="nowrap">
+                    <img style="display: inline;" class="heart-resetW heart-white cursor" src="../../img/heart_white.png" title="Responda!" alt="Indica que não foi respondido a pergunta do formulário."/>
+                    <img style="display: none;" class="heart-reset heart cursor" src="../../img/heart.png" title="Respondida!" alt="Indica que foi respondido a pergunta do formulário."/>
+                    <p>Seu alimento favorito?</p>
+                </div>
+                <div class="center"><input class="question cursor-pointer" type="text" id="favfood" name="favfood" placeholder="Meu amor ou frango?" maxlength="45"/></div>
+            </label>
+            <br>
+            <label>
+                <div class="nowrap">
+                    <img style="display: inline;" class="heart-resetW heart-white cursor" src="../../img/heart_white.png" title="Responda!" alt="Indica que não foi respondido a pergunta do formulário."/>
+                    <img style="display: none;" class="heart-reset heart cursor" src="../../img/heart.png" title="Respondida!" alt="Indica que foi respondido a pergunta do formulário."/>
+                    <p>Quanto me ama?</p>
+                </div>
+                <div class="center"><input class="question cursor-pointer" type="number" id="amountlove" name="amountlove" placeholder="Mil milhões?"/></div>
+            </label>
+            <br>
+            <label>
+                <div class="nowrap">
+                    <img style="display: inline; padding-left: 10px; transition-duration: 15s;" class="heart-resetW heart-whitebox cursor" src="../../img/heart_white.png" title="Responda!" alt="Indica que não foi respondido a pergunta do formulário."/>
+                    <img style="display: none; padding-left: 10px; transition-duration: 15s;" class="heart-reset heartbox cursor" src="../../img/heart.png" title="Respondida!" alt="Indica que foi respondido a pergunta do formulário."/>
+                    <p>Me ama?</p>
+                </div>
+                <div class="radio-box">
+                    <div class="yes-or-no nowrap">
+                        <input id="much" type="radio" id="yes or yes" name="yesoryes" value="much" required/>
+                        <img for="much" style="display: inline;" src="../../img/rosa_white.png" class="heart-resetW rosa-white cursor" title="Responda!" alt="Indica que não foi respondido a pergunta do formulário."/>
+                        <img for="much" style="display: none;" class="heart-reset rosa cursor" src="../../img/rosa.png" title="Respondida!" alt="Indica que foi respondido a pergunta do formulário."/>
+                        <label for="much" class="love-me cursor-pointer" title="Meu amor por você atravessa galáxias!">Imensamente ao infinito e além!!!</label>
+                    </div>
+                    <div class="yes-or-no nowrap">
+                        <input id="maybe" type="radio" id="yes or yes" name="yesoryes" value="maybe" required/>
+                        <img for="maybe" style="display: inline;" src="../../img/rosa_white.png" class="heart-resetW rosa-white cursor" title="Responda!" alt="Indica que não foi respondido a pergunta do formulário."/>
+                        <img for="maybe" style="display: none;" class="heart-reset rosa cursor" src="../../img/rosa.png" title="Respondida!" alt="Indica que foi respondido a pergunta do formulário."/>
+                        <label for="maybe" class="love-me cursor-pointer" title="Não tenho mais a mesma certeza, meu bem!">Gosto de você!</label>
+                    </div>
+                    <div class="yes-or-no nowrap">
+                        <input id="no"type="radio" id="yes or yes" name="yesoryes" value="no" required/>
+                        <img for="no" style="display: inline;" src="../../img/rosa_white.png" class="heart-resetW rosa-white cursor" title="Responda!" alt="Indica que não foi respondido a pergunta do formulário."/>
+                        <img for="no" style="display: none;" class="heart-reset rosa cursor" src="../../img/rosa.png" title="Respondida!" alt="Indica que foi respondido a pergunta do formulário."/>
+                        <label for="no" class="love-me cursor-pointer" title="Tá viajando? Nunca!">Tá ficando louco!</label>
+                    </div>
+                </div>
+            </label>
+            <br>
+            <label>
+                <div class="nowrap">
+                    <img style="display: inline;" class="heart-resetW pheart-white cursor" src="../../img/heart_white.png" title="Responda!" alt="Indica que não foi respondido a pergunta do formulário."/>
+                    <img style="display: none;" class="heart-reset pheart cursor" src="../../img/heart.png" title="Respondida!" alt="Indica que foi respondido a pergunta do formulário."/>
+                    <p>Senha:</p>
+                </div>
+                <div class="center">
+                    <div class="box-viewer">
+                        <input class="question-pass cursor-pointer" type="password" id="password" name="password" placeholder="Secret love?" autocomplete="off" minlength="7" maxlength="20" required/>
+                        <img id="viewer" style="display: block;" class="viewer-click viewers cursor-pointer" src="../../img/viewer.png" title="Visualizar senha?" alt="Visualizador de senha">
+                        <img id="viewer-on" style="display: none;" class="viewer-click viewers cursor-pointer" src="../../img/viewer_on.png" title="Senha exposta!" alt="Senha visualizada">
+                    </div>
+                    <br><br>
+                </div>
+            </label>
+            <div class="center">
+                <div class="wrap">
+                    <div class="center">
+                        <p id="character-special" class="validate-password" style="display: none;">Adicionar Caracter especial!</p>
+                        <p id="numberpass" class="validate-password" style="display: none;">Adicionar número!</p>
+                    </div>
+                    <div class="center">  
+                        <p id="uppercase" class="validate-password" style="display: none;">Adicionar letra maiúscula!</p>
+                        <p id="lowercase" class="validate-password" style="display: none;">Adicionar letra minúscula!</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <label>
+                <div class="nowrap">
+                    <img style="display: inline; padding-left: 10px; transition-duration: 15s;" class="heart-resetW heart-whitepass cursor" src="../../img/heart_white.png" title="Responda!" alt="Indica que não foi respondido a pergunta do formulário."/>
+                    <img style="display: none; padding-left: 10px; transition-duration: 15s;" class="heart-reset heart-password cursor" src="../../img/heart.png" title="Respondida!" alt="Indica que foi respondido a pergunta do formulário."/>
+                    <p>Confirmação de Senha:</p>
+                </div>
+                <div class="center">
+                    <div class="box-viewer">
+                        <input id="confirm-password" name="confirmpassword" class="cursor-pointer" type="password" placeholder="Secret Password?" minlength="7" maxlength="20" autocomplete="off" required/>
+                        <img id="viewer-second" style="display: block;" class="viewer-click2 viewers cursor-pointer" src="../../img/viewer.png" title="Visualizar senha?" alt="Visualizador de senha">
+                        <img id="viewersecond-on" style="display: none;" class="viewer-click2 viewers cursor-pointer" src="../../img/viewer_on.png" title="Senha exposta!" alt="Senha visualizada">
+                    </div>
+                    <br><br>
+                </div>
+            </label>
+            <div class="center">
+                <p id="password-error" class="validate-password" style="display: none;">Senha diferente!</p>
+            </div>
+            <br>
+            <div id="mult-buttom">
+                <input id="buttom-reset" class="buttom cursor-pointer" type="reset" id="reset"/>
+                <input class="buttom cursor-pointer" type="submit" id="submit" name="submit"/>
+            </div>
+        </fieldset>
+    </form>
+    <script>
+          
+    </script>
+    <footer></footer>
+</body>
+</html>
