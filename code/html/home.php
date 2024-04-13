@@ -9,6 +9,11 @@
     <link rel="stylesheet" type="text/css" href="../css/footer.css">
 </head>
 <body>
+    <?php 
+    if(!isset($_SESSION)){
+        session_start();
+    }
+    ?>
     <header>
         <h1 id="go-top" class="cursor" title="Meu amor, minha namorada, minha vida!">
             <a id="link-home" href="home.html">My Love</a>
